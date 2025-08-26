@@ -30,7 +30,7 @@ use App\Models\Formation;
 Route::middleware(AdminMiddleware::class)->group(function () {
 Route::get('/fullcalender', [FullCalenderController::class, 'index'])->name('calendar.index');
 Route::post('/fullcalenderAjax', [FullCalenderController::class, 'ajax'])->name('calendar.store');
-});
+});     
 // Depenses's routes
 Route::get('/adddepense', function () {
     return view('admins.adddep');
